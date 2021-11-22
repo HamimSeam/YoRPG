@@ -1,0 +1,11 @@
+-Created Character class with health, strength, defense, atkRating attributes.
+-Created methods isAlive(), getdefense(), lowerHP(int), attack(character)
+-Removed these functions and attributes from Monster.java and Protagonist.java
+-Need to create functions in protagonist and Monster that set attributes and their specialized attack.
+-YoRPG compiles but the game is clearly bugged
+
+QCC
+-In Character.java when the instance variables were private, Monster.java and 
+Protagonist.java could not access the instance varaibles. I suspect it has to do with 
+the header extends Character.
+-Should the instance variables in Character.java be public or private?
