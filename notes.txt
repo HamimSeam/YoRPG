@@ -1,0 +1,8 @@
+Kevin -
+
+Some issues still exist with overloading constructors in java if I wanted subclasses of monsters
+to have different attributes. 
+
+super(int, int, int, double) defaults to Monster() instead of Monster(int, int, int, double).
+
+this() as a constructor causes compile errors in Character.java.
