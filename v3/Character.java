@@ -5,7 +5,7 @@ public class Character {
 	protected int defense;
 	protected double atkRating;
 
-	Character(int h, int s, int d, double a){
+	Character (int h, int s, int d, double a) {
 	    health = h;
 	    strength = s;
 	    defense = d;
@@ -13,24 +13,21 @@ public class Character {
 	}
 
 	public boolean isAlive() {
-		if (health <= 0) {
-			return false;
-		}
-		return true;
+		return health >= 0;
 	}
 
-	public int getDefense(){
-	    return defense;
+	public int getDefense() {
+		return defense;
 	}
 
-	public int lowerHP(int dmg){
-	    health = health - dmg;
-	    return health;
+	public void lowerHP(int dmg) {
+		health = health - dmg;
 	}
 
 	public int attack(Character c) {
 		int damage;
 		damage = (int)(strength * atkRating) - c.defense;
+		c.lowerHP(damage);
 		return damage;
 	}
 }
