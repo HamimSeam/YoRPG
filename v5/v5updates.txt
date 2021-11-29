@@ -1,3 +1,7 @@
 -Changed Driver to allow user to pick classes
 -changed max turns to 500
 -Created a way to randomize the monster appearances
+
+-work on difficulty
+-work on class specialization
+-gumba and bowser need tweaking

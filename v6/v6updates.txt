@@ -1,0 +1,4 @@
+
+v6
+-Archer, Brawler, and Wizard have been given special abilities instead of specialize.
+-Power levels have been tweaked.

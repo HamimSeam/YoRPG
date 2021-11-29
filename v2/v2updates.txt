@@ -1,0 +1,1 @@
+-changed character constructor to overloaded constructor so that I could test super in Monster

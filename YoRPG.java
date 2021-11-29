@@ -22,12 +22,6 @@
  * (ex: "==============================" both before and after the moment of glory is printed)
 **********************************************/
 
-/**********************************************
-OUR DRIVER MODS
--After we ask for a name, we ask the user what class they want using if else statements
--When we encounter a monster, we generate a number between 0 and 2 inclusive and depending on which number is generated, Gumba, Koopa, or Bowser appear.
-**********************************************/
-
 import java.io.*;
 import java.util.*;
 

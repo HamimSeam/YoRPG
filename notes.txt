@@ -1,8 +1,46 @@
 Kevin -
 
 Some issues still exist with overloading constructors in java if I wanted subclasses of monsters
-to have different attributes. 
+to have different attributes.
 
 super(int, int, int, double) defaults to Monster() instead of Monster(int, int, int, double).
 
 this() as a constructor causes compile errors in Character.java.
+
+Jacob -
+v1
+-Created Character class with health, strength, defense, atkRating attributes.
+-Created methods isAlive(), getdefense(), lowerHP(int), attack(character)
+-Removed these functions and attributes from Monster.java and Protagonist.java
+-Need to create functions in protagonist and Monster that set attributes and their specialized attack.
+-YoRPG compiles but the game is clearly bugged
+
+v2
+-changed character constructor to overloaded constructor so that I could test super in Monster
+
+v3
+-changed all protections to protected
+
+v5
+-Changed Driver to allow user to pick classes
+-changed max turns to 500
+-Created a way to randomize the monster appearances
+need to
+-work on difficulty
+-work on class specialization
+-gumba and bowser need tweaking
+
+v6
+-Archer, Brawler, and Wizard have been given special abilities instead of specialize.
+-Power levels have been tweaked.
+
+v7
+-added about() methods
+
+QCC
+-In Character.java when the instance variables were private, Monster.java and
+Protagonist.java could not access the instance varaibles. I suspect it has to do with
+the header extends Character.
+-Should the instance variables in Character.java be public or private?
+-why use super when we change everything to protected?
+-What exception is used to catch an error of when an input doesn't match any of our keys? For example, say the user inputs archer but our code only accepts Archer.
